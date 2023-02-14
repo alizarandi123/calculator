@@ -1,0 +1,148 @@
+@font-face {
+    font-family: digitalFont;
+    src: url(/digital-7.ttf);
+}
+
+#before-number,
+#before-operation,
+p {
+    font-family: digitalFont;
+    font-size: 30;
+    margin: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding: 50px;
+    border-radius: 30px;
+    margin: 100px auto 0;
+    background-color: #e6e6e6;
+    border: 1px solid#00000069;
+    box-shadow: -5px -10px 10px 20px rgba(0, 0, 0, 0.1), +10px 20px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    width: 400px;
+    text-align: right;
+    font-size: 36px;
+    padding-bottom: 20px;
+    background-color: #8ca47f;
+    height: 100px;
+    padding: 23px;
+    margin-bottom: 30px;
+}
+
+#secondary-display {
+    display: flex;
+    justify-content: flex-start;
+    width: 446px;
+    font-size: 20px;
+    color: #000;
+    background-color: #8ca47f;
+    min-height: 20px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-top: 10px;
+}
+
+#before-operation {
+    color: #000;
+    font-family: digitalFont;
+    padding-left: 20px;
+}
+
+#before-number {
+    padding-left: 10px;
+    font-family: digitalFont;
+}
+
+.hr {
+    width: 100%;
+    border-top: 3px solid rgba(128, 128, 128, 0.089);
+}
+
+#space {
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+#shadow {
+    height: 4px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 438px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#divide,
+#minus,
+#clear-display,
+#clear,
+#plus,
+#multiply,
+#toggle,
+#Percent,
+.btn-number,
+#square,
+#x2,
+#root,
+#backspace,
+#equal {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 75px;
+    height: 60px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: -3px 10px 20px rgba(0, 0, 0, 0.2), 3px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-number {
+    background-color: #ff5500;
+    font-family: digitalFont;
+    color: #f0f0f0;
+}
+
+#backspace {
+    width: 163px;
+}
+
+#equal {
+    background-color: green;
+    color: white;
+}
+
+#divide:hover,
+#minus:hover,
+#clear-display:hover,
+#clear:hover,
+#plus:hover,
+#multiply:hover,
+#toggle:hover,
+#Percent:hover,
+.btn-number:hover,
+#square:hover,
+#x2:hover,
+#root:hover,
+#backspace:hover,
+#equal:hover {
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5), 1px 6px 6px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
